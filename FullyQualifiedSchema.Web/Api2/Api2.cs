@@ -24,9 +24,9 @@ public static class Api2
             .WithName("GetWeatherForecast2")
             .Produces<WeatherForecast[]>();
     }
-}
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary, string ApiProp2 = "API2")
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary, string ApiProp2 = "API2")
+    {
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
 }
