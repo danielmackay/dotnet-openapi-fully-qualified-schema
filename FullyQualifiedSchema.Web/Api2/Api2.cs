@@ -21,7 +21,8 @@ public static class Api2
                     .ToArray();
                 return forecast;
             })
-            .WithName("GetWeatherForecast2");
+            .WithName("GetWeatherForecast2")
+            .Produces<WeatherForecast[]>();
     }
 }
 
