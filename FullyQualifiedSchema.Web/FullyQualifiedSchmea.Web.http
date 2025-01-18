@@ -1,0 +1,6 @@
+@FullyQualifiedSchmea.Web_HostAddress = http://localhost:5210
+
+GET {{FullyQualifiedSchmea.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
