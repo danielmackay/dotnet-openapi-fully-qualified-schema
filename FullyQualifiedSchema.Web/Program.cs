@@ -1,12 +1,13 @@
 using FullyQualifiedSchema.Web.Api1;
 using FullyQualifiedSchema.Web.Api2;
 using Scalar.AspNetCore;
+using WebApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+builder.Services.AddOpenApiExt();
 
 var app = builder.Build();
 
